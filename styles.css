@@ -644,7 +644,7 @@ strong.hl { color: var(--text); font-weight: 600; }
 .tier .name { margin: 10px 0 0; font-family: var(--display); font-weight: 500; font-size: 44px; line-height: 1.1; letter-spacing: .08em; }
 .tier--gold .name { color: var(--gold); }
 .tier--white .name { color: var(--ivory); }
-.tier .tagline { margin: 10px 0 0; font-family: var(--serif); font-size: 22px; font-style: italic; color: var(--text-2); }
+.tier .tagline { margin: 10px 0 0; font-family: var(--serif); font-size: 22px; line-height: 1.3; font-style: italic; color: var(--text-2); }
 .tier dl { margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 12px; padding: 22px 0; border-top: 1px solid var(--line-2); border-bottom: 1px solid var(--line-2); font-size: 14px; }
 .tier dt { color: var(--text-3); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
 .tier dd { margin: 4px 0 0; font-weight: 600; }
