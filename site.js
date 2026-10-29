@@ -26,6 +26,11 @@
     });
   });
 
+  // On narrow screens the marble scale scrolls; start at the end where our tiers sit
+  document.querySelectorAll('.scale-scroll').forEach(function (el) {
+    el.scrollLeft = el.scrollWidth;
+  });
+
   // Reveal on scroll
   var targets = document.querySelectorAll('[data-reveal], .scale, .steps, .steps li, .bars-wrap, .tierbars');
   if ('IntersectionObserver' in window && !reduced) {
