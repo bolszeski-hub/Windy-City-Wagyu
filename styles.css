@@ -650,6 +650,28 @@ strong.hl { color: var(--text); font-weight: 600; }
 .tier dd { margin: 4px 0 0; font-weight: 600; }
 .tier .desc { color: var(--text-2); font-size: 15.5px; }
 
+/* ---------- Where to buy ---------- */
+.paths { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+@media (max-width: 860px) { .paths { grid-template-columns: minmax(0, 1fr); } }
+.path {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(36px, 4vw, 52px);
+  border: 1px solid var(--gold);
+  background: var(--bg);
+  scroll-margin-top: 96px;
+}
+.path--trade { border-color: var(--line-3); background: #0B0908; }
+.path .k { font-size: 12.5px; letter-spacing: .26em; text-transform: uppercase; color: var(--gold); }
+.path--trade .k { color: var(--text-3); }
+.path h3 { margin: 14px 0 28px; font-family: var(--display); font-size: clamp(24px, 2.4vw, 30px); font-weight: 500; line-height: 1.25; letter-spacing: .05em; }
+.path-list { list-style: none; margin: 0 0 36px; padding: 0; flex: 1; border-top: 1px solid var(--line-2); }
+.path-list li { position: relative; padding: 14px 0 14px 30px; border-bottom: 1px solid var(--line-2); color: var(--text-2); font-size: 16px; }
+.path-list li::before { content: "✓"; position: absolute; left: 2px; color: var(--gold); }
+.path-note { margin: 14px 0 0; font-size: 14px; color: var(--text-3); text-align: center; }
+.paths-foot { margin: 40px auto 0; max-width: 620px; text-align: center; }
+
 /* ---------- Shop ---------- */
 .guide { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
 @media (max-width: 900px) { .guide { grid-template-columns: 1fr; } }
@@ -676,7 +698,7 @@ strong.hl { color: var(--text); font-weight: 600; }
 .tier-rows { display: grid; gap: 20px; }
 .tier-row {
   display: grid;
-  grid-template-columns: 1.2fr 1fr auto;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
   gap: 40px;
   align-items: center;
   padding: 44px;
@@ -695,13 +717,9 @@ strong.hl { color: var(--text); font-weight: 600; }
 .scores span { padding: 7px 14px; border: 1px solid var(--line-3); font-size: 14px; font-variant-numeric: tabular-nums; }
 .scores .top { border-color: currentColor; }
 .cuts-line { margin-top: 16px; font-size: 14px; color: var(--text-2); }
-.price { font-size: 14px; color: var(--text-3); margin-bottom: 14px; }
-.price b { font-family: var(--display); font-size: 24px; color: var(--text); font-weight: 500; letter-spacing: .04em; }
-.buy { min-width: 220px; }
 @media (max-width: 1000px) {
   .tier-row { grid-template-columns: 1fr; gap: 28px; padding: 36px 28px; }
   .tier-row:hover { transform: none; }
-  .buy { min-width: 0; }
 }
 
 .cuts { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 18px; }
