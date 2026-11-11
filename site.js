@@ -1,4 +1,4 @@
-// Windy City Wagyu: header state, mobile menu, scroll reveals, parallax and count-ups.
+// WC Wagyu: header state, mobile menu, scroll reveals, parallax and count-ups.
 (function () {
   var root = document.documentElement;
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
